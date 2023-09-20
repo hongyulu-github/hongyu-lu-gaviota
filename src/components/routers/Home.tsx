@@ -1,6 +1,5 @@
 import { Grid,GridItem,Box, HStack, Heading} from '@chakra-ui/react'
 import ColorModeSwitch from '../ColorModeSwitch'
-import {useState} from 'react'
 import { Outlet } from 'react-router-dom'
 
 import Project from '../Project/Project'
