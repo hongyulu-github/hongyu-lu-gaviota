@@ -1,0 +1,10 @@
+.vertical-text {
+    transform-origin: left bottom;
+    writing-mode: vertical-rl;
+    white-space: nowrap; 
+   
+  }
+
+Breadcrumb > BreadcrumbItem{
+    margin-right : 100px 
+}

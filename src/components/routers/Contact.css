@@ -1,0 +1,9 @@
+.icon:hover{
+    transform: scale(1.2) translateX(-5px);
+}
+
+li{
+    display: inline-block;
+    margin-right: 70px;
+    
+}
