@@ -1,4 +1,4 @@
-import {  HStack,Image,Text,Heading } from "@chakra-ui/react"
+import {  HStack,Image,Text } from "@chakra-ui/react"
 import NextPage from "../NextPage"
 
 
