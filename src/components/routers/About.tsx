@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
     <HStack  height='100%'  margin='200px 9%'  >
-      <Image borderRadius='5px' src="public\msg503041899-343163.jpg" alt="Hongyu Lu Foto GUAPISIMA" width='40%' marginLeft='9%' marginRight='2%'  />
+      <Image borderRadius='5px' src="/msg503041899-343163.jpg" alt="Hongyu Lu Foto GUAPISIMA" width='40%' marginLeft='9%' marginRight='2%'  />
       <Text width='40%' marginRight='9%' fontSize='20px'>
       <p>
             Bienvenidos, visitantes de mi porfolio personal. <br />

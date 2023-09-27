@@ -64,7 +64,7 @@ templateColumns='1fr 10fr 1fr'
 
 <GridItem area='navRight'  position='fixed' right='2px' top='50px'  >
   
-  <Image src='./public/hongyu-lu.jpg' boxSize='77px' borderRadius='50%' marginBottom='10px' marginRight='5px'  />
+  <Image src='/hongyu-lu.jpg' boxSize='77px' borderRadius='50%' marginBottom='10px' marginRight='5px'  />
   <NavRight />
  
 
