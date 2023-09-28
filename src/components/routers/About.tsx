@@ -40,7 +40,7 @@ const About = () => {
     </HStack>
      <HStack  margin='100px 9%' flexDirection='column' >
      
-     <NextPage nextPageLink="contact" message="Si quieres conocer la versión divertida y misteriosa detrás de esta sonrisa, ¡ponte en contacto y desbloqueemos la diversión!😁🔓"/>
+     <NextPage nextPageLink="/contact" message="Si quieres conocer la versión divertida y misteriosa detrás de esta sonrisa, ¡ponte en contacto y desbloqueemos la diversión!😁🔓"/>
     </HStack>
     </>
     
