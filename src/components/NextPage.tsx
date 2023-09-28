@@ -1,4 +1,5 @@
 import { Heading } from '@chakra-ui/react'
+import {Link} from 'react-router-dom'
 
 
 interface Props{
@@ -9,9 +10,9 @@ interface Props{
 
 const NextPage = ({nextPageLink,message}:Props) => {
   return (
-    <a href={'/'+nextPageLink}>
+    <Link to={nextPageLink}>
         <Heading marginY={5} height='50px'>{message}</Heading>
-         </a>
+         </Link>
   )
 }
 
