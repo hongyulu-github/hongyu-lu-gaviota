@@ -37,7 +37,7 @@ templateColumns='1fr 10fr 1fr'
 
 
  <Show above='sm'>
- <GridItem area='intro' position='fixed' left='2px' top="10px" >
+ <GridItem area='intro' position='fixed' left='20px' top="10px" >
  
     
     <Image src='/hongyu-lu.jpg' boxSize='77px' borderRadius='50%' marginBottom='20px' marginLeft='10px' marginTop='30px' />
@@ -52,10 +52,9 @@ templateColumns='1fr 10fr 1fr'
 </GridItem>
 
 <GridItem area='nav' >
+
  <HStack justifyContent='flex-end' marginRight={2} marginY={1.5}>
-  {/*
-   <ColorModeSwitch onToggleLang={hangleToggleLang}/>
-  */}
+  
 
  
  </HStack>
@@ -64,7 +63,7 @@ templateColumns='1fr 10fr 1fr'
 
 </GridItem>
 
-<GridItem area='navRight'  position='fixed' right='2px' top='50px'  >
+<GridItem area='navRight'  >
   
 
   <NavRight />

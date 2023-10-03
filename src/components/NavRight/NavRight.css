@@ -6,6 +6,9 @@
   }
 
 .nav-right{
+  position: fixed;
+  top: 15vh;
+  right: 20px;
   font-size: 20px;
   height: 60vh;
   display: flex;
