@@ -11,34 +11,6 @@ import {
 
 
 
-/*
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children:[
-      {
-        path:"about",
-        element:<About />
-      }
-    ]
-  },
-  
-]);
-
-
-
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <ColorModeScript initialColorMode={theme.config.initialColorMode}/>
-      <RouterProvider router={router} />
-    </ChakraProvider>
-  </React.StrictMode>,
-)
-*/
-
-
 // Try
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

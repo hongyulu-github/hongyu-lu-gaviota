@@ -39,6 +39,8 @@ templateColumns='1fr 10fr 1fr'
  <Show above='sm'>
  <GridItem area='intro' position='fixed' left='2px' top="10px" >
  
+    
+    <Image src='/hongyu-lu.jpg' boxSize='77px' borderRadius='50%' marginBottom='20px' marginLeft='10px' marginTop='30px' />
     <Greeting/>
     
 
@@ -64,7 +66,7 @@ templateColumns='1fr 10fr 1fr'
 
 <GridItem area='navRight'  position='fixed' right='2px' top='50px'  >
   
-  <Image src='/hongyu-lu.jpg' boxSize='77px' borderRadius='50%' marginBottom='10px' marginRight='5px'  />
+
   <NavRight />
  
 

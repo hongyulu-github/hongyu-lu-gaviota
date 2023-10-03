@@ -13,7 +13,7 @@ const NavRight = () => {
   return (
     
 
-<Breadcrumb className='vertical-text' >
+<Breadcrumb className='vertical-text nav-right' >
 
   <BreadcrumbItem isCurrentPage>
     <BreadcrumbLink as={Link} to='/'>

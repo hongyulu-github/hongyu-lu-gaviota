@@ -90,10 +90,7 @@ const projectslist:Project[] =[
     </GridItem>
 
     <GridItem area='navRight'  position='fixed' right='2px' top='50px'  >
-   {/*
-    <Image src='./public/hongyu-lu.jpg' boxSize='77px' borderRadius='50%' marginBottom='10px' marginRight='5px'  />
-      <NavRight />
-   */}
+   
      
      
      
