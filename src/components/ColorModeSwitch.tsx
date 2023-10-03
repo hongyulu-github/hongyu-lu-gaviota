@@ -1,4 +1,4 @@
-import { Switch, useColorMode} from '@chakra-ui/react'
+import {useColorMode} from '@chakra-ui/react'
 import './ColorModeSwitch.css'
 
 
