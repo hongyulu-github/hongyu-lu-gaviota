@@ -54,8 +54,8 @@ const projectslist:Project[] =[
     
     
     <GridItem area='main' marginLeft='70px' >
-        <Box width='90%' marginBottom='300px' marginLeft='50px' marginTop='50px'>
-          <Heading>¡Bienvenidos! Welcome 欢迎 Bienvenidos स्वागत مرحبًا স্বাগত Bem-vindos Добро пожаловать ようこそ സ്വാഗതം Willkommen Bienvenue ਜੀ ਆਇਆ ਨੂੰ Sugeng rawuh 欢迎 స్వాగతం स्वागत आहे Hoş geldiniz வரவேற்கின்றோம் خوش آمدید.</Heading>
+        <Box className='welcome' width='80%' marginBottom='300px' marginLeft='50px' marginTop='50px'>
+          <Heading >¡Bienvenidos! Welcome 欢迎 Bienvenidos स्वागत مرحبًا স্বাগত Bem-vindos Добро пожаловать ようこそ സ്വാഗതം Willkommen Bienvenue ਜੀ ਆਇਆ ਨੂੰ Sugeng rawuh 欢迎 స్వాగతం स्वागत आहे Hoş geldiniz வரவேற்கின்றோம் خوش آمدید.</Heading>
           <Heading size='lg' marginTop={5}>A mi porfolio, <br/>entantada.</Heading>
           <Heading size='2xl' marginTop={40} textAlign={'right'}>Me llamo Hongyu Lu, </Heading>
           <Heading size='3xl' marginTop={5}  textAlign={'right'}>una desarrolladora web autodidacta.</Heading>
@@ -63,7 +63,7 @@ const projectslist:Project[] =[
         </Box>
         {projectslist.map(p => 
 
-            <Project title={p.title} subtitle={p.subtitle} imageSrc={p.imageSrc} link={p.link} /> 
+            <Project title={p.title} subtitle={p.subtitle} imageSrc={p.imageSrc} link={p.link} key={p.title}/> 
 
         )}
         <NextPage nextPageLink='about' message="¿Curioso? Descubre más sobre mí en 'About Me'. ¡No te lo pierdas! 😄"/>

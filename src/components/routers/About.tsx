@@ -1,5 +1,6 @@
 import {  HStack,Image,Text } from "@chakra-ui/react"
 import NextPage from "../NextPage"
+import './About.css'
 
 
 
@@ -9,9 +10,9 @@ const About = () => {
 
   return (
     <>
-    <HStack  height='100%'  margin='200px 9%'  >
-      <Image borderRadius='5px' src="/msg503041899-343163.jpg" alt="Hongyu Lu Foto GUAPISIMA" width='40%' marginLeft='9%' marginRight='2%'  />
-      <Text width='40%' marginRight='9%' fontSize='20px'>
+    <HStack  height='100%'  margin='200px 9%' className="aboutContainer" >
+      <Image className="aboutImg" borderRadius='5px' src="/msg503041899-343163.jpg" alt="Hongyu Lu Foto GUAPISIMA" width='40%' marginLeft='9%' marginRight='2%'  />
+      <Text className="aboutText" width='40%' marginRight='9%' fontSize='20px'>
       <p>
             Bienvenidos, visitantes de mi porfolio personal. <br />
             No sé tú, pero a mí me mola lo que mueve la pasión. Salí de la universitad con un título de letras, ahora sueño con dedicarme al mundo Tech. 

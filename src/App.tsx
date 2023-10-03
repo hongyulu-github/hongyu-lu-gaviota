@@ -2,6 +2,7 @@ import { Grid,GridItem,Show,Image} from '@chakra-ui/react'
 import { Routes, Route } from 'react-router-dom'
 import Greeting from './components/Greeting'
 import NavRight from './components/NavRight/NavRight'
+import './App.css'
 
 
 import Home from './components/routers/Home'

@@ -1,0 +1,15 @@
+@media (max-width: 900px) {
+.aboutContainer{
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutText{
+    width: 50vw;
+    text-align: right;
+}
+.aboutImg{
+    width: 40vw;
+    margin-bottom: 2vh;
+}
+
+}
