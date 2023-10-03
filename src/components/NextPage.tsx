@@ -11,7 +11,7 @@ interface Props{
 const NextPage = ({nextPageLink,message}:Props) => {
   return (
     <Link to={nextPageLink}>
-        <Heading marginY={5} height='50px'>{message}</Heading>
+        <Heading marginY='50px' height='50px'>{message}</Heading>
          </Link>
   )
 }

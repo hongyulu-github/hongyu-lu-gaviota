@@ -1,4 +1,4 @@
-import { Grid,GridItem,Show, HStack,Image} from '@chakra-ui/react'
+import { Grid,GridItem,Show,Image} from '@chakra-ui/react'
 import { Routes, Route } from 'react-router-dom'
 import Greeting from './components/Greeting'
 import NavRight from './components/NavRight/NavRight'
@@ -53,13 +53,6 @@ templateColumns='1fr 10fr 1fr'
 
 <GridItem area='nav' >
 
- <HStack justifyContent='flex-end' marginRight={2} marginY={1.5}>
-  
-
- 
- </HStack>
-
- 
 
 </GridItem>
 

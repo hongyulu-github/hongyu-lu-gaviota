@@ -53,8 +53,8 @@ const projectslist:Project[] =[
   */}
     
     
-    <GridItem area='main'  >
-        <Box width='90%' marginBottom='300px' marginLeft='40px' marginTop='50px'>
+    <GridItem area='main' marginLeft='70px' >
+        <Box width='90%' marginBottom='300px' marginLeft='50px' marginTop='50px'>
           <Heading>¡Bienvenidos! Welcome 欢迎 Bienvenidos स्वागत مرحبًا স্বাগত Bem-vindos Добро пожаловать ようこそ സ്വാഗതം Willkommen Bienvenue ਜੀ ਆਇਆ ਨੂੰ Sugeng rawuh 欢迎 స్వాగతం स्वागत आहे Hoş geldiniz வரவேற்கின்றோம் خوش آمدید.</Heading>
           <Heading size='lg' marginTop={5}>A mi porfolio, <br/>entantada.</Heading>
           <Heading size='2xl' marginTop={40} textAlign={'right'}>Me llamo Hongyu Lu, </Heading>
@@ -77,7 +77,7 @@ const projectslist:Project[] =[
     </GridItem>
 
     <GridItem area='nav' >
-     <HStack justifyContent='flex-end' marginRight={2} marginY={1.5}>
+     <HStack justifyContent='flex-end' marginRight={10} marginTop={2}>
     
        <ColorModeSwitch />
      
