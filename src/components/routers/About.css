@@ -1,15 +1,68 @@
 @media (max-width: 900px) {
-.aboutContainer{
+  .aboutContainer {
     flex-direction: column;
     justify-content: center;
-}
-.aboutText{
+    background-image: url("pink.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .aboutText {
     width: 50vw;
     text-align: right;
-}
-.aboutImg{
+  }
+  .aboutImg {
     width: 40vw;
     margin-bottom: 2vh;
+  }
 }
 
+.keyWordBallContainer {
+  border-radius: 50%;
+  position: absolute;
+  font-weight: bold;
+  font-size: 1rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  display: block;
+}
+
+.keyWordBallContainer:hover {
+  text-shadow: 2px 2px 5px red, 4px 4px 5px orange, 6px 6px 5px yellow,
+    8px 8px 5px green, 10px 10px 5px blue, 12px 12px 5px indigo,
+    14px 14px 5px violet;
+  transform: scale(1.5); /* NO VA ??? */
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("pink.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+.whoAmI {
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  transition: text-shadow 0.3s ease;
+  position: absolute;
+  transform: translate(-125%, 160%) rotate(-20deg);
+  font-size: 2rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.whoAmI:hover {
+  text-shadow: 2px 2px 5px red, 4px 4px 5px orange, 6px 6px 5px yellow,
+    8px 8px 5px green, 10px 10px 5px blue, 12px 12px 5px indigo,
+    14px 14px 5px violet;
+  transform: translate(-125%, 160%) rotate(-20deg) scale(1.1);
 }

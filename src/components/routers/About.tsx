@@ -1,73 +1,135 @@
-import {  HStack,Image,Text } from "@chakra-ui/react"
-import NextPage from "../NextPage"
-import './About.css'
+import { Center, HStack, ScaleFade, Text } from "@chakra-ui/react";
+import { useEffect, useRef, useState } from "react";
+import "./About.css";
 
-
-
-const About = () => {
-  
-
-
-  return (
-    <>
-    <HStack  height='100%'  margin='200px 9%' className="aboutContainer" >
-      <Image className="aboutImg" borderRadius='5px' src="/msg503041899-343163.jpg" alt="Hongyu Lu Foto GUAPISIMA" width='40%' marginLeft='9%' marginRight='2%'  />
-      <Text className="aboutText" width='40%' marginRight='9%' fontSize='20px'>
-      <p>
-            Bienvenidos, visitantes de mi porfolio personal. <br />
-            No sé tú, pero a mí me mola lo que mueve la pasión. Salí de la universitad con un título de letras, ahora sueño con dedicarme al mundo Tech. 
-            Y la pasión, me empuja hasta aquí, una desarrolladora de web autodidacta . Convierto la pasión en acción y
-            el aprendizaje en crecimiento constante.<br />
-            Amo cuando los códigos funciona, y me fascina la posibilidad de crear. <br />
-            
-            <br />
-            Mientras trabajaba de profesora de chino en la EOI de Málaga, he realizado los cursos, y aplicado lo aprendido en práctica, los conocimientos de HTML, CSS,
-            JavaScript, Node.js, React, SQL y Python.
-            Es la pasión de experimentar en la vida que me dio una mente abierta y una voluntad
-            inquebrantable. <br />
-
-            <br />
-            Me llamo Hongyu Lu, soy una gaviota en busca de libertad.
-      </p>
-    
-      </Text>
-     
-   
-
-
-
-   
- 
-    </HStack>
-     <HStack  margin='100px 9%' flexDirection='column' >
-     
-     <NextPage nextPageLink="/contact" message="Si quieres conocer la versión divertida y misteriosa detrás de esta sonrisa, ¡ponte en contacto y desbloqueemos la diversión!😁🔓"/>
-    </HStack>
-    </>
-    
-  )
+interface Props {
+  keyWord: string;
+  color: string;
+  r: string;
+  tx: string;
+  ty: string;
+  onClick: () => void;
 }
 
-export default About
+const keyWordList = [
+  {
+    keyWord: "Spainsh Language & me",
+    color: "#FF5733",
+    r: "-30deg",
+    tx: "300px",
+    ty: "-20px",
+    content: <div>hello</div>,
+  },
+  {
+    keyWord: "Friki?",
+    color: "#33FF57",
+    r: "-25deg",
+    tx: "300px",
+    ty: "-15px",
 
+    content: <div>hello</div>,
+  },
+  {
+    keyWord: "Why programming?",
+    color: "#3357FF",
+    r: "-22deg",
+    tx: "300px",
+    ty: "-0px",
+    content: <div>hello</div>,
+  },
+  {
+    keyWord: "MBTI personality test",
+    color: "#FF33A6",
+    r: "-20deg",
+    tx: "300px",
+    ty: "15px",
+    content: <div>hello</div>,
+  },
+];
 
- {/*
-       <p>
-            Bienvenidos, visitantes de mi porfolio personal. <br />
-            No sé tú, pero a mí me mola lo que mueve la pasión. Salí de la universitad con un título de letras, ahora sueño con dedicarme al mundo Tech. 
-            Y la pasión, me empuja hasta aquí, una desarrolladora de web autodidacta. Convierto la pasión en acción y
-            el aprendizaje en crecimiento constante.<br />
-            Amo cuando los códigos funciona, y me fascina la posibilidad de crear. <br />
-            
-            <br />
-            Mientras trabajaba de profesora de chino en la EOI de Málaga, he realizado los cursos, y aplicado lo aprendido en práctica, los conocimientos de HTML, CSS,
-            JavaScript, Node.js, React, SQL y Python.
-            Es la pasión de experimentar en la vida que me dio una mente abierta y una voluntad
-            inquebrantable. <br />
+const KeyWordModal = ({ keyWord, r, tx, ty, onClick }: Props) => {
+  return (
+    <div
+      className="keyWordBallContainer"
+      style={{
+        transform: `rotate(${r}) translate(${tx},${ty})`,
+      }}
+      onClick={onClick}
+    >
+      {keyWord}
+    </div>
+  );
+};
 
-            <br />
-            Me llamo Hongyu Lu, soy una gaviota en busca de libertad.
-    </p>
-    */}
+const About = () => {
+  const [selectedKeyWord, setSelectedKeyWord] = useState<number | undefined>(
+    undefined
+  );
 
+  const ref = useRef<HTMLDivElement | null>(null);
 
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (ref.current && !ref.current.contains(event.target as Node)) {
+      setSelectedKeyWord(undefined);
+    }
+  };
+  return (
+    <>
+      {selectedKeyWord ? (
+        <HStack height="100%" className="aboutContainer">
+          <ScaleFade initialScale={0.9} in={selectedKeyWord !== 0}>
+            <Center
+              ref={ref}
+              w="80vw"
+              h="90vh"
+              color="black"
+              mt="4"
+              bg="white"
+              opacity="80%"
+              rounded="md"
+              shadow="md"
+            >
+              {keyWordList[selectedKeyWord - 1].content}
+            </Center>
+          </ScaleFade>
+        </HStack>
+      ) : (
+        <HStack
+          height="100%"
+          className="aboutContainer"
+          style={{ filter: selectedKeyWord ? "blur(8px)" : "" }}
+        >
+          <Text className="whoAmI">Who am I?</Text>
+          {keyWordList.map((k, i) => {
+            return (
+              <KeyWordModal
+                keyWord={k.keyWord}
+                color={k.color}
+                r={k.r}
+                tx={k.tx}
+                ty={k.ty}
+                onClick={() => setSelectedKeyWord(i + 1)}
+              />
+            );
+          })}
+        </HStack>
+      )}
+
+      {/* <HStack margin="100px 9%" flexDirection="column">
+        <NextPage
+          nextPageLink="/contact"
+          message="Si quieres conocer la versión divertida y misteriosa detrás de esta sonrisa, ¡ponte en contacto y desbloqueemos la diversión!😁🔓"
+        />
+      </HStack> */}
+    </>
+  );
+};
+
+export default About;
