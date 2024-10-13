@@ -86,7 +86,7 @@ const About = () => {
         <HStack
           height="100%"
           className="aboutContainer"
-          style={{ backgroundImage: `url("pink.jpg")` }}
+          // style={{ backgroundImage: `url("pink.jpg")` }}
         >
           <ScaleFade initialScale={0.9} in={selectedKeyWord !== 0}>
             <Center
@@ -108,7 +108,10 @@ const About = () => {
         <HStack
           height="100%"
           className="aboutContainer"
-          style={{ filter: selectedKeyWord ? "blur(8px)" : "" }}
+          style={{
+            filter: selectedKeyWord ? "blur(8px)" : "",
+            // backgroundImage: `url("pink.jpg")`,
+          }}
         >
           <Text className="whoAmI">Who am I?</Text>
           {keyWordList.map((k, i) => {
