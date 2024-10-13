@@ -83,7 +83,11 @@ const About = () => {
   return (
     <>
       {selectedKeyWord ? (
-        <HStack height="100%" className="aboutContainer">
+        <HStack
+          height="100%"
+          className="aboutContainer"
+          style={{ backgroundImage: `url("pink.jpg")` }}
+        >
           <ScaleFade initialScale={0.9} in={selectedKeyWord !== 0}>
             <Center
               ref={ref}
