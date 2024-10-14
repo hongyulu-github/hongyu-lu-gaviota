@@ -1,23 +1,18 @@
 @media (max-width: 900px) {
+  .welcome > Heading {
+    width: 400px;
+  }
+  .project > Image {
+    min-width: 300px;
+    width: 300px;
+  }
+  .project {
+    flex-direction: column;
+  }
 
-    .welcome > Heading{
-        width: 400px;
-
-    }
-    .project > Image{
-        min-width: 300px;
-        width: 300px;
-
-    }
-    .project{
-        flex-direction: column;
-    }
-    
-    .projectTitle{
-        width: 500px;
-        position: relative;
-        left: 400px;
-    }
-   
-    
+  .projectTitle {
+    width: 500px;
+    position: relative;
+    left: 400px;
+  }
 }

@@ -1,10 +1,14 @@
-
-import { Heading } from '@chakra-ui/react'
+import { Heading } from "@chakra-ui/react";
 
 const Greeting = () => {
   return (
-    <Heading paddingLeft={2} size='md'>NIHAO,<br/>soy <br/><strong>HONGYU.</strong></Heading>
-  )
-}
+    <Heading paddingLeft={2} size="md">
+      NIHAO,
+      <br />
+      soy <br />
+      <strong>HONGYU.</strong>
+    </Heading>
+  );
+};
 
-export default Greeting
+export default Greeting;

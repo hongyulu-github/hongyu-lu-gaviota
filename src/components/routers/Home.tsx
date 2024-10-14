@@ -90,10 +90,10 @@ function Home() {
           </Heading>
           <Heading size="lg" marginTop={5}>
             A mi porfolio, <br />
-            entantada.
+            encantada.
           </Heading>
           <Heading size="2xl" marginTop={40} textAlign={"right"}>
-            Me llamo Hongyu Lu,{" "}
+            Me llamo Hongyu Lu,
           </Heading>
           <Heading size="3xl" marginTop={5} textAlign={"right"}>
             una desarrolladora web autodidacta.

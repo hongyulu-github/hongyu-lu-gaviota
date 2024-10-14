@@ -1,6 +1,7 @@
 import { Center, HStack, ScaleFade, Text } from "@chakra-ui/react";
 import { useEffect, useRef, useState } from "react";
 import "./About.css";
+import SpainishAndMe from "../spainishAndMe";
 
 interface Props {
   keyWord: string;
@@ -18,7 +19,7 @@ const keyWordList = [
     r: "-30deg",
     tx: "300px",
     ty: "-20px",
-    content: <div>hello</div>,
+    content: <SpainishAndMe />,
   },
   {
     keyWord: "Friki?",
@@ -26,7 +27,6 @@ const keyWordList = [
     r: "-25deg",
     tx: "300px",
     ty: "-15px",
-
     content: <div>hello</div>,
   },
   {

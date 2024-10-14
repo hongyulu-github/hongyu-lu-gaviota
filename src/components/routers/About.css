@@ -26,6 +26,7 @@
     1px 1px 0 black;
   transition: transform 0.3s ease, text-shadow 0.3s ease;
   display: block;
+  transform: rotate(-30deg) translate(300px, -20px);
 }
 
 .keyWordBallContainer:hover {
@@ -33,6 +34,7 @@
     8px 8px 5px green, 10px 10px 5px blue, 12px 12px 5px indigo,
     14px 14px 5px violet;
   transform: scale(1.5); /* NO VA ??? */
+  cursor: pointer;
 }
 
 .aboutContainer {
