@@ -12,7 +12,100 @@ interface Props {
   onClick: () => void;
 }
 
-const spainishAndMeList: SlideItemProps[] = [
+const spanishAndMeList: SlideItemProps[] = [
+  {
+    content: (
+      <div key="1" className="info-card">
+        <p>China</p>
+        <p>Hispanic Studies (university in China)</p>
+        <p>C1 level of Spanish</p>
+        <p>Spanish culture</p>
+        <p>Studying Literature in Spain</p>
+        <p>
+          Master's in Language and Literature Studies (Universitat de València)
+        </p>
+      </div>
+    ),
+  },
+  {
+    content: (
+      <div key="2" className="info-card">
+        <p>Worked in Bolivia for 2 years</p>
+        <p>Interpreter / accounting assistant</p>
+        <p>Road construction company</p>
+        <p>Improving Spanish / Accounting</p>
+        <p></p>
+        <p>Educational program in Spain</p>
+        <p>Teaching Chinese at the EOI (Official School of Languages)</p>
+        <p>Studying programming</p>
+      </div>
+    ),
+  },
+];
+
+const geekList: SlideItemProps[] = [
+  {
+    content: (
+      <div key="1" className="info-card">
+        <p>China</p>
+        <p>Estudios Hispánicos (universidad en China)</p>
+        <p>Nivel C1 de castellano</p>
+        <p>Cultura española</p>
+        <p>Estudiar Literatura en España</p>
+        <p>
+          Máster en Estudios de Lenguas y Literaturas (Universitat de València)
+        </p>
+      </div>
+    ),
+  },
+  {
+    content: (
+      <div key="2" className="info-card">
+        <p>Trabajo en Bolivia por 2 años</p>
+        <p>Intérprete / auxiliar de contable</p>
+        <p>Empresa de construcción de carretera</p>
+        <p>Mejorando castellano / Contabilidad</p>
+        <p></p>
+        <p>Programa educativo en España</p>
+        <p>Enseñando chino en la EOI</p>
+        <p>Estudiar programación</p>
+      </div>
+    ),
+  },
+];
+
+const whyProgrammingList: SlideItemProps[] = [
+  {
+    content: (
+      <div key="1" className="info-card">
+        <p>China</p>
+        <p>Estudios Hispánicos (universidad en China)</p>
+        <p>Nivel C1 de castellano</p>
+        <p>Cultura española</p>
+        <p>Estudiar Literatura en España</p>
+        <p>
+          Máster en Estudios de Lenguas y Literaturas (Universitat de València)
+        </p>
+      </div>
+    ),
+  },
+  {
+    content: (
+      <div key="2" className="info-card">
+        <p>Trabajo en Bolivia por 2 años</p>
+        <p>Intérprete / auxiliar de contable</p>
+        <p>Empresa de construcción de carretera</p>
+        <p>Mejorando castellano / Contabilidad</p>
+        <p></p>
+        <p>Programa educativo en España</p>
+        <p>Enseñando chino en la EOI</p>
+        <p>Estudiar programación</p>
+      </div>
+    ),
+  },
+];
+
+const mbtiList: SlideItemProps[] = [
   {
     content: (
       <div key="1" className="info-card">
@@ -45,20 +138,20 @@ const spainishAndMeList: SlideItemProps[] = [
 
 const keyWordList = [
   {
-    keyWord: "Spainsh Language & me",
+    keyWord: "Spanish Language & me",
     color: "#FF5733",
     r: "-30deg",
     tx: "300px",
     ty: "-20px",
-    content: <Slide contentList={spainishAndMeList} />,
+    content: <Slide contentList={spanishAndMeList} />,
   },
   {
-    keyWord: "Friki?",
+    keyWord: "Geek?",
     color: "#33FF57",
     r: "-25deg",
     tx: "300px",
     ty: "-15px",
-    content: <div>hello</div>,
+    content: <Slide contentList={geekList} />,
   },
   {
     keyWord: "Why programming?",
@@ -66,7 +159,7 @@ const keyWordList = [
     r: "-22deg",
     tx: "300px",
     ty: "-0px",
-    content: <div>hello</div>,
+    content: <Slide contentList={whyProgrammingList} />,
   },
   {
     keyWord: "MBTI personality test",
@@ -74,7 +167,7 @@ const keyWordList = [
     r: "-20deg",
     tx: "300px",
     ty: "15px",
-    content: <div>hello</div>,
+    content: <Slide contentList={mbtiList} />,
   },
 ];
 
