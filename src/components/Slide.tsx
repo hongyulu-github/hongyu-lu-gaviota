@@ -11,7 +11,7 @@ export interface SlideItemProps {
 }
 
 const SlideItem = ({ content }: SlideItemProps) => {
-  return <div className="slideItemContainer">{content.content}</div>;
+  return <div className="slideItemContainer">{content}</div>;
 };
 
 const Slide = ({ contentList }: SlideProps) => {
@@ -36,7 +36,7 @@ const Slide = ({ contentList }: SlideProps) => {
       </button>
 
       <div className="slideContainer">
-        <SlideItem content={contentList[currentIndex]} />
+        <SlideItem content={contentList[currentIndex].content} />
       </div>
 
       <button className="rightArrow" onClick={nextSlide}>
