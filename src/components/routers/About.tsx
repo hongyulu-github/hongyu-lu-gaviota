@@ -1,7 +1,7 @@
 import { Center, HStack, ScaleFade, Text } from "@chakra-ui/react";
 import { useEffect, useRef, useState } from "react";
 import "./About.css";
-import SpainishAndMe from "../spainishAndMe";
+import Slide, { SlideItemProps } from "../Slide";
 
 interface Props {
   keyWord: string;
@@ -12,6 +12,37 @@ interface Props {
   onClick: () => void;
 }
 
+const spainishAndMeList: SlideItemProps[] = [
+  {
+    content: (
+      <div key="1" className="info-card">
+        <p>China</p>
+        <p>Estudios Hispánicos (universidad en China)</p>
+        <p>Nivel C1 de castellano</p>
+        <p>Cultura española</p>
+        <p>Estudiar Literatura en España</p>
+        <p>
+          Máster en Estudios de Lenguas y Literaturas (Universitat de València)
+        </p>
+      </div>
+    ),
+  },
+  {
+    content: (
+      <div key="2" className="info-card">
+        <p>Trabajo en Bolivia por 2 años</p>
+        <p>Intérprete / auxiliar de contable</p>
+        <p>Empresa de construcción de carretera</p>
+        <p>Mejorando castellano / Contabilidad</p>
+        <p></p>
+        <p>Programa educativo en España</p>
+        <p>Enseñando chino en la EOI</p>
+        <p>Estudiar programación</p>
+      </div>
+    ),
+  },
+];
+
 const keyWordList = [
   {
     keyWord: "Spainsh Language & me",
@@ -19,7 +50,7 @@ const keyWordList = [
     r: "-30deg",
     tx: "300px",
     ty: "-20px",
-    content: <SpainishAndMe />,
+    content: <Slide contentList={spainishAndMeList} />,
   },
   {
     keyWord: "Friki?",
