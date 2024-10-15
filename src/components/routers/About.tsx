@@ -47,28 +47,18 @@ const geekList: SlideItemProps[] = [
   {
     content: (
       <div key="1" className="info-card">
-        <p>China</p>
-        <p>Estudios Hispánicos (universidad en China)</p>
-        <p>Nivel C1 de castellano</p>
-        <p>Cultura española</p>
-        <p>Estudiar Literatura en España</p>
-        <p>
-          Máster en Estudios de Lenguas y Literaturas (Universitat de València)
-        </p>
+        <p>Sci-Fi</p>
+        <p>Doctor Who/ Matrix/ Interstellar</p>
+        <p>Nerdy</p>
+        <p>LOTR/ IT Crowd/ JOJO</p>
       </div>
     ),
   },
   {
     content: (
       <div key="2" className="info-card">
-        <p>Trabajo en Bolivia por 2 años</p>
-        <p>Intérprete / auxiliar de contable</p>
-        <p>Empresa de construcción de carretera</p>
-        <p>Mejorando castellano / Contabilidad</p>
-        <p></p>
-        <p>Programa educativo en España</p>
-        <p>Enseñando chino en la EOI</p>
-        <p>Estudiar programación</p>
+        <p>Drawing</p>
+        <image></image>
       </div>
     ),
   },
@@ -78,59 +68,24 @@ const whyProgrammingList: SlideItemProps[] = [
   {
     content: (
       <div key="1" className="info-card">
-        <p>China</p>
-        <p>Estudios Hispánicos (universidad en China)</p>
-        <p>Nivel C1 de castellano</p>
-        <p>Cultura española</p>
-        <p>Estudiar Literatura en España</p>
-        <p>
-          Máster en Estudios de Lenguas y Literaturas (Universitat de València)
-        </p>
-      </div>
-    ),
-  },
-  {
-    content: (
-      <div key="2" className="info-card">
-        <p>Trabajo en Bolivia por 2 años</p>
-        <p>Intérprete / auxiliar de contable</p>
-        <p>Empresa de construcción de carretera</p>
-        <p>Mejorando castellano / Contabilidad</p>
-        <p></p>
-        <p>Programa educativo en España</p>
-        <p>Enseñando chino en la EOI</p>
-        <p>Estudiar programación</p>
+        <p>Problem solving</p>
+        <p>Creativity</p>
+        <p>Teamwork</p>
+        <p>Self-fulfilment</p>
       </div>
     ),
   },
 ];
 
-const mbtiList: SlideItemProps[] = [
+const personalityList: SlideItemProps[] = [
   {
     content: (
       <div key="1" className="info-card">
-        <p>China</p>
-        <p>Estudios Hispánicos (universidad en China)</p>
-        <p>Nivel C1 de castellano</p>
-        <p>Cultura española</p>
+        <p>Empathetic</p>
+        <p>Truthful</p>
+        <p>Open-minded</p>
+        <p>Passionate</p>
         <p>Estudiar Literatura en España</p>
-        <p>
-          Máster en Estudios de Lenguas y Literaturas (Universitat de València)
-        </p>
-      </div>
-    ),
-  },
-  {
-    content: (
-      <div key="2" className="info-card">
-        <p>Trabajo en Bolivia por 2 años</p>
-        <p>Intérprete / auxiliar de contable</p>
-        <p>Empresa de construcción de carretera</p>
-        <p>Mejorando castellano / Contabilidad</p>
-        <p></p>
-        <p>Programa educativo en España</p>
-        <p>Enseñando chino en la EOI</p>
-        <p>Estudiar programación</p>
       </div>
     ),
   },
@@ -146,7 +101,7 @@ const keyWordList = [
     content: <Slide contentList={spanishAndMeList} />,
   },
   {
-    keyWord: "Geek?",
+    keyWord: "Geek? Nerd?",
     color: "#33FF57",
     r: "-25deg",
     tx: "300px",
@@ -162,12 +117,12 @@ const keyWordList = [
     content: <Slide contentList={whyProgrammingList} />,
   },
   {
-    keyWord: "MBTI personality test",
+    keyWord: "Personality",
     color: "#FF33A6",
     r: "-20deg",
     tx: "300px",
     ty: "15px",
-    content: <Slide contentList={mbtiList} />,
+    content: <Slide contentList={personalityList} />,
   },
 ];
 
