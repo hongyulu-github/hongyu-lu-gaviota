@@ -80,7 +80,7 @@ const geekList: SlideItemProps[] = [
     content: (
       <div key="2" className="info-card drawing">
         <img src="/IMG_2881.jpg" />
-        <img src="/IMG_0383.jpg" />
+        <img src="/IMG_0383.JPG" />
         <img src="/IMG_2009.jpg" />
         <img src="/IMG_5223.jpg" />
       </div>
