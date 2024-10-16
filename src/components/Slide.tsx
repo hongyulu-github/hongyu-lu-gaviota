@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Slide.css";
 import "react-slideshow-image/dist/styles.css";
 
@@ -29,6 +29,24 @@ const Slide = ({ contentList }: SlideProps) => {
     );
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "ArrowLeft") {
+        prevSlide(); // Left arrow key triggers the previous slide
+      } else if (event.key === "ArrowRight") {
+        nextSlide(); // Right arrow key triggers the next slide
+      }
+    };
+
+    // Attach event listener
+    window.addEventListener("keydown", handleKeyDown);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [currentIndex, contentList.length]);
+
   return (
     <div className="carouselContainer">
       <button className="leftArrow" onClick={prevSlide}>
@@ -42,6 +60,9 @@ const Slide = ({ contentList }: SlideProps) => {
       <button className="rightArrow" onClick={nextSlide}>
         &#9654;
       </button>
+      <div className="pagination">
+        {currentIndex + 1} / {contentList.length}
+      </div>
     </div>
   );
 };

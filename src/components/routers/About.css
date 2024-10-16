@@ -68,3 +68,21 @@
     14px 14px 5px violet;
   transform: translate(-125%, 160%) rotate(-20deg) scale(1.1);
 }
+
+.drawing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.drawing img {
+  flex: 1 1 48%;
+  max-width: 68%;
+  max-height: 70%;
+  margin: 1%;
+  object-fit: cover;
+}

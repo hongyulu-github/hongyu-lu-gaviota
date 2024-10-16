@@ -30,14 +30,36 @@ const spanishAndMeList: SlideItemProps[] = [
   {
     content: (
       <div key="2" className="info-card">
-        <p>Worked in Bolivia for 2 years</p>
+        <p>1. Worked in Bolivia for 2 years</p>
         <p>Interpreter / accounting assistant</p>
         <p>Road construction company</p>
         <p>Improving Spanish / Accounting</p>
         <p></p>
-        <p>Educational program in Spain</p>
+        <p>2. Educational program in Spain</p>
         <p>Teaching Chinese at the EOI (Official School of Languages)</p>
         <p>Studying programming</p>
+      </div>
+    ),
+  },
+];
+
+const whyProgrammingList: SlideItemProps[] = [
+  {
+    content: (
+      <div key="1" className="info-card">
+        <p>Problem solving</p>
+        <p>Creativity</p>
+        <p>Teamwork</p>
+        <p>Self-fulfilment</p>
+      </div>
+    ),
+  },
+  {
+    content: (
+      <div key="2" className="info-card">
+        <p>Billdin</p>
+        <p>React + React Native</p>
+        <p>Two important modules</p>
       </div>
     ),
   },
@@ -56,22 +78,11 @@ const geekList: SlideItemProps[] = [
   },
   {
     content: (
-      <div key="2" className="info-card">
-        <p>Drawing</p>
-        <image></image>
-      </div>
-    ),
-  },
-];
-
-const whyProgrammingList: SlideItemProps[] = [
-  {
-    content: (
-      <div key="1" className="info-card">
-        <p>Problem solving</p>
-        <p>Creativity</p>
-        <p>Teamwork</p>
-        <p>Self-fulfilment</p>
+      <div key="2" className="info-card drawing">
+        <img src="./public/IMG_2881.jpg" />
+        <img src="./public/IMG_0383.jpg" />
+        <img src="./public/IMG_2009.jpg" />
+        <img src="./public/IMG_5223.jpg" />
       </div>
     ),
   },
@@ -85,7 +96,6 @@ const personalityList: SlideItemProps[] = [
         <p>Truthful</p>
         <p>Open-minded</p>
         <p>Passionate</p>
-        <p>Estudiar Literatura en España</p>
       </div>
     ),
   },
@@ -101,20 +111,21 @@ const keyWordList = [
     content: <Slide contentList={spanishAndMeList} />,
   },
   {
-    keyWord: "Geek? Nerd?",
-    color: "#33FF57",
+    keyWord: "Why programming?",
+    color: "#3357FF",
     r: "-25deg",
     tx: "300px",
     ty: "-15px",
-    content: <Slide contentList={geekList} />,
+    content: <Slide contentList={whyProgrammingList} />,
   },
   {
-    keyWord: "Why programming?",
-    color: "#3357FF",
+    keyWord: "Geek? Nerd?",
+    color: "#33FF57",
+
     r: "-22deg",
     tx: "300px",
     ty: "-0px",
-    content: <Slide contentList={whyProgrammingList} />,
+    content: <Slide contentList={geekList} />,
   },
   {
     keyWord: "Personality",
@@ -175,7 +186,6 @@ const About = () => {
               color="black"
               mt="4"
               bg="white"
-              opacity="80%"
               rounded="md"
               shadow="md"
             >
