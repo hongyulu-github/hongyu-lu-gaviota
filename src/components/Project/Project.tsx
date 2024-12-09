@@ -32,7 +32,9 @@ const Project = ({ title, imageSrc, subtitle, link }: Props) => {
           textAlign="right"
           width="17%"
         >
-          <Heading className="projectTitle">{title}</Heading>
+          <Heading className="projectTitle courier-prime-regular">
+            {title}
+          </Heading>
           <Text className="subtitle" display="none" fontSize="sm">
             {subtitle}
           </Text>

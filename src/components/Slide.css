@@ -17,6 +17,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 body {
@@ -52,7 +55,9 @@ body {
 .info-card p {
   margin: 0;
   font-size: 1.2em;
-  white-space: nowrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .pagination {

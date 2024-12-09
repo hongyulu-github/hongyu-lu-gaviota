@@ -32,16 +32,14 @@ const Slide = ({ contentList }: SlideProps) => {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "ArrowLeft") {
-        prevSlide(); // Left arrow key triggers the previous slide
+        prevSlide();
       } else if (event.key === "ArrowRight") {
-        nextSlide(); // Right arrow key triggers the next slide
+        nextSlide();
       }
     };
 
-    // Attach event listener
     window.addEventListener("keydown", handleKeyDown);
 
-    // Clean up event listener on component unmount
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };

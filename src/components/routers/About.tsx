@@ -16,28 +16,24 @@ const spanishAndMeList: SlideItemProps[] = [
   {
     content: (
       <div key="1" className="info-card">
-        <p>China</p>
-        <p>Hispanic Studies (university in China)</p>
-        <p>C1 level of Spanish</p>
-        <p>Spanish culture</p>
-        <p>Studying Literature in Spain</p>
         <p>
-          Master's in Language and Literature Studies (Universitat de València)
+          Mi conexión con el español ha sido una aventura increíble que combina
+          estudio, trabajo y experiencias culturales. Todo empezó en China,
+          donde estudié Estudios Hispánicos en la universidad y alcancé un nivel
+          C1 en el idioma. Durante esa etapa, también descubrí mi interés por la
+          cultura y la literatura españolas, lo que me llevó a estudiar
+          Literatura en España y, más tarde, a hacer un máster en Lengua y
+          Literatura en la Universitat de València.
+          <br />
+          En lo laboral, tuve la suerte de vivir en Bolivia durante dos años,
+          trabajando como intérprete y asistente contable para una empresa de
+          construcción de carreteras. Fue una experiencia que no solo mejoró
+          mucho mi español, sino que también me enseñó bastante sobre
+          contabilidad en un entorno hispanohablante. Después, en España,
+          participé en un programa educativo enseñando chino en la Escuela
+          Oficial de Idiomas (EOI). Al mismo tiempo, aproveché para estudiar
+          programación y seguir aprendiendo cosas nuevas.
         </p>
-      </div>
-    ),
-  },
-  {
-    content: (
-      <div key="2" className="info-card">
-        <p>1. Worked in Bolivia for 2 years</p>
-        <p>Interpreter / accounting assistant</p>
-        <p>Road construction company</p>
-        <p>Improving Spanish / Accounting</p>
-        <p></p>
-        <p>2. Educational program in Spain</p>
-        <p>Teaching Chinese at the EOI (Official School of Languages)</p>
-        <p>Studying programming</p>
       </div>
     ),
   },
@@ -47,10 +43,13 @@ const whyProgrammingList: SlideItemProps[] = [
   {
     content: (
       <div key="1" className="info-card">
-        <p>Problem solving</p>
-        <p>Creativity</p>
-        <p>Teamwork</p>
-        <p>Self-fulfilment</p>
+        <p>
+          Me decidí a aprender programación porque me encanta resolver problemas
+          y encontrar soluciones creativas. Además, es una forma de trabajar en
+          equipo y construir cosas que realmente pueden marcar la diferencia.
+          También me da mucha satisfacción personal ver cómo mis habilidades van
+          creciendo y cómo puedo usar lo que aprendo para crear algo útil.
+        </p>
       </div>
     ),
   },
@@ -59,7 +58,7 @@ const whyProgrammingList: SlideItemProps[] = [
       <div key="2" className="info-card">
         <p>Billdin</p>
         <p>React + React Native</p>
-        <p>Two important modules</p>
+        <p>Dos modules importantes </p>
       </div>
     ),
   },
@@ -92,10 +91,16 @@ const personalityList: SlideItemProps[] = [
   {
     content: (
       <div key="1" className="info-card">
-        <p>Empathetic</p>
-        <p>Truthful</p>
-        <p>Open-minded</p>
-        <p>Passionate</p>
+        <p>
+          Me considero una persona empática, siempre intento entender y conectar
+          con los demás. <br />
+          Soy honesta y valoro mucho la verdad en todas las situaciones. También
+          me gusta ser de mente abierta, escuchar diferentes ideas y aprender de
+          otras perspectivas.
+          <br />
+          Por último, soy alguien apasionado por lo que hace; cuando algo me
+          importa, me esfuerzo al máximo para dar lo mejor de mí.
+        </p>
       </div>
     ),
   },

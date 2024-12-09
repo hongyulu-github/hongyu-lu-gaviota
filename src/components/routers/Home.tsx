@@ -66,14 +66,6 @@ function Home() {
       }}
       templateColumns="1fr 10fr 1fr"
     >
-      {/*
-   <Show above='sm'>
-     <GridItem area='intro' position='fixed' left='2px' top="10px" >
-        <Greeting/>
-     </GridItem>
-     </Show>
-  */}
-
       <GridItem area="main" marginLeft="70px">
         <Box
           className="welcome"
