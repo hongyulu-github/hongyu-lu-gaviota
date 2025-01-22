@@ -1,14 +1,24 @@
-import { Avatar, Heading } from "@chakra-ui/react";
+import { Avatar } from "@chakra-ui/react";
 import { useLanguage } from "../../context/languageContext";
 import LanSelector from "../lanSelector";
 import "./upper.css";
 
 function Upper() {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: "smooth", // Smooth scrolling
+    });
+  };
   return (
     <div className="upperContainer">
-      <Avatar name="Dan Abrahmov" src="hongyu-lu.jpg" />
-      <Heading>{t("hongyulu", language)}</Heading>
+      <Avatar
+        cursor={"pointer"}
+        name={t("hongyulu")}
+        src="hongyu-lu.jpg"
+        onClick={scrollToBottom}
+      />
       <LanSelector />
     </div>
   );
