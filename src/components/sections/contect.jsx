@@ -1,9 +1,11 @@
-import { Box, HStack, Icon, Image } from "@chakra-ui/react";
+import { HStack, Icon, Image } from "@chakra-ui/react";
+import {
+  BsFillEnvelopeAtFill,
+  BsGithub,
+  BsLinkedin,
+  BsTwitter,
+} from "react-icons/bs";
 import "./contact.css";
-import { BsLinkedin } from "react-icons/bs";
-import { BsFillEnvelopeAtFill } from "react-icons/bs";
-import { BsTwitter } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
 
 function Contact() {
   const imgOriginal = [

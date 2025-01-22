@@ -17,7 +17,7 @@ function DraggableItemsBox() {
   const { t } = useLanguage();
   const hobbies = {
     painting: ["IMG_1.jpg", "IMG_2.jpg", "IMG_3.jpg", "IMG_4.jpg"],
-    sifi: ["Doctor Who"],
+    sifi: ["Doctor Who", "LOTR", "Matrix"],
     personality: ["friends", "passionate", "open-minded", "honest", "empathic"],
   };
 

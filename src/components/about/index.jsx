@@ -43,7 +43,7 @@ function About() {
   };
   //0: none
   //1: meAsCoder
-  //2. besidesOfCode
+  //2. besidesCoding
   return (
     <div className="aboutContainer">
       <Divider bgColor={getColorCssVariable("grey")} marginBottom={"20px"} />
@@ -55,7 +55,7 @@ function About() {
           <Button colorScheme={"purple"} onClick={() => onOpenModal(1)}>
             {t("meAsCoder")}
           </Button>
-          <Button onClick={() => onOpenModal(2)}>{t("besidesOfCode")}</Button>
+          <Button onClick={() => onOpenModal(2)}>{t("besidesCoding")}</Button>
         </ButtonGroup>
       </HStack>
 
