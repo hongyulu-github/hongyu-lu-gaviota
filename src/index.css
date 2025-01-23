@@ -2,4 +2,15 @@ html,
 body,
 #root {
   height: 100%;
+  white-space: pre-line;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+:root {
+  --black: #000000ab;
+  --white: #ffffffce;
+  --grey: #ebebeb66;
+  --purple: #58339c;
+  --red: red;
 }

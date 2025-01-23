@@ -1,0 +1,26 @@
+.contactContainer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.imgRolling {
+  display: flex;
+  width: 100%;
+  margin-bottom: 100px;
+  animation: rollImages 60s linear infinite;
+  gap: 5px;
+}
+
+@keyframes rollImages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
