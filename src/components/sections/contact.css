@@ -1,6 +1,6 @@
 .contactContainer {
   width: 100%;
-  height: calc(80% - 120px - 300px);
+  height: calc(80vh - 120px - 250px);
   display: flex;
   justify-content: start;
   align-items: center;
