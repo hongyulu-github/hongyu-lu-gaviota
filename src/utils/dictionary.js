@@ -1,14 +1,23 @@
+// {es:"",en:""},
+
 export const DICTIONARY = {
   hongyulu: { es: "Hongyu Lu", en: "Hongyu Lu", cn: "卢泓羽" },
   name: { es: "nombre", en: "name" },
+  title: { es: "titúlo", en: "title" },
+  frontendDeveloper: {
+    es: "desarrollador@ Front-end",
+    en: "Front-end developer",
+  },
+  newSkills: { es: "nuevasHabilidades", en: "newSkills" },
+  techStack: { es: "techStack", en: "techStack" },
   greet: { es: "saludar", en: "greet" },
   welcomeToPortfolio: {
     es: "Bienvenid@ al porfolio de ",
     en: "Welcome to the portfolio of ",
   },
-  scrollToSeeProjects: {
-    es: "Desliza Para Abajo Para Ver Mis Proyectos",
-    en: "Scroll down to see my projects",
+  scrollToknowMore: {
+    es: "¡Desliza para abajo para conocer más de mí!",
+    en: "Scroll down to get to know more about me!",
   },
   subtitleGameHub: {
     es: "Este proyecto de front-end utiliza React y TypeScript con la herramienta Vite para crear una réplica de una popular página de juegos en línea. Hemos integrado un API que proporciona datos en tiempo real sobre una amplia variedad de juegos. Nuestra aplicación ofrece funciones esenciales, como la capacidad de buscar juegos por título o género, así como la opción de ordenarlos según tus preferencias. También hemos incorporado otras características para mejorar la experiencia del usuario, como la clasificación y filtrado avanzados. Con este proyecto, pretendemos ofrecer una experiencia de navegación y búsqueda de juegos similar a la de la plataforma original.",
@@ -38,24 +47,32 @@ export const DICTIONARY = {
   meAsCoder: { es: "Yo como programadora", en: "Me as a coder" },
   besidesCoding: { es: "Fuera de los códigos", en: "Besides coding" },
   motivationLetter: {
-    es: `Resumiendo, tengo un perfil junior de frontend developer con más de un año de experiencia con TypeScript + React y Unit Testing con Vitest/Jest.
+    es: `¡Hola! ¡Gracias por visitar mi portfolio!
+
+    Resumiendo, tengo un perfil junior de frontend developer con más de un año de experiencia con TypeScript + React y Unit Testing con Vitest/Jest.
 
     Pero soy mucho más que estas palabras frías.
 
-    Primero, soy valiente. No tengo un background en tecnología; vengo del área de letras y he trabajado con idiomas como intérprete y profesora. Sin embargo, decidí dar un giro hacia la tecnología, un área que no tiene nada que ver con mi formación inicial.
+    Soy valiente. No tengo un background en tecnología; vengo del área de letras y he trabajado con idiomas como intérprete y profesora. Sin embargo, decidí dar un giro hacia la tecnología, un área que no tiene nada que ver con mi formación inicial.
 
-    Segundo, me destaco como un fast learner. Sin la ayuda de un tutor o guía, he aprendido de forma autodidacta a desarrollar aplicaciones escalables y optimizadas. Tengo un dominio sólido en desarrollo frontend (HTML, CSS, JavaScript, TypeScript, React) y en Unit Testing con Vitest. Además, poseo una base firme en Python y SQL.
+    Me destaco como un fast learner. Sin la ayuda de un tutor o guía, he aprendido de forma autodidacta a desarrollar aplicaciones escalables y optimizadas. Tengo un dominio sólido en desarrollo frontend (HTML, CSS, JavaScript, TypeScript, React) y en Unit Testing con Vitest. Además, poseo una base firme en Python y SQL.
     
-    Tercero, soy una trabajadora comprometida. En mi trabajo anterior, construimos un gran equipo que trabajaba de manera eficiente gracias a metodologías Agile y Scrum. Por mi parte, también contribuí desarrollando dos modelos clave del producto. Con muchas ganas de trabajar, no me quedo quieta y siempre busco crecer.`,
-    en: `In summary, I have a junior profile as a frontend developer with over a year of experience with TypeScript + React and Unit Testing with Vitest/Jest.
+    Soy una trabajadora comprometida. En mi trabajo anterior, construimos un gran equipo que trabajaba de manera eficiente gracias a metodologías Agile y Scrum. Por mi parte, también contribuí desarrollando dos modelos clave del producto. Con muchas ganas de trabajar, no me quedo quieta y siempre busco crecer.
+    
+    Así que, si te ha interesado, ¡contacta conmigo!`,
+    en: `Hi! Thank you for visiting my portfolio!
+    
+    In summary, I have a junior profile as a frontend developer with over a year of experience with TypeScript + React and Unit Testing with Vitest/Jest.
 
     But I am much more than these cold words.
 
-    First, I am brave. I don't have a background in technology; I come from the humanities and have worked with languages as an interpreter and teacher. However, I decided to pivot to technology, an area unrelated to my initial training.
+    I am brave. I don't have a background in technology; I come from the humanities and have worked with languages as an interpreter and teacher. However, I decided to pivot to technology, an area unrelated to my initial training.
 
-    Second, I stand out as a fast learner. Without the help of a tutor or guide, I have self-taught myself to develop scalable and optimized applications. I have solid expertise in frontend development (HTML, CSS, JavaScript, TypeScript, React) and Unit Testing with Vitest. Additionally, I have a strong foundation in Python and SQL.
+    I stand out as a fast learner. Without the help of a tutor or guide, I have self-taught myself to develop scalable and optimized applications. I have solid expertise in frontend development (HTML, CSS, JavaScript, TypeScript, React) and Unit Testing with Vitest. Additionally, I have a strong foundation in Python and SQL.
 
-    Third, I am a committed worker. In my previous job, we built a great team that worked efficiently thanks to Agile and Scrum methodologies. I also contributed by developing two key product models. With a strong desire to work, I never stay still and always look for ways to grow.`,
+    I am a committed worker. In my previous job, we built a great team that worked efficiently thanks to Agile and Scrum methodologies. I also contributed by developing two key product models. With a strong desire to work, I never stay still and always look for ways to grow.
+    
+    So, contact with me if you want to know more!`,
   },
   contactMe: { es: "{{Contacta conmigo}}", en: "{{Contact with me}}" },
 };

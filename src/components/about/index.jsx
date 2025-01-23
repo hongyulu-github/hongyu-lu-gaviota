@@ -3,6 +3,7 @@ import {
   ButtonGroup,
   Divider,
   HStack,
+  Image,
   Modal,
   ModalBody,
   ModalCloseButton,
@@ -13,11 +14,11 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
+import { useState } from "react";
 import { useLanguage } from "../../context/languageContext";
 import { getColorCssVariable } from "../../utils/utils";
-import { useState } from "react";
-import "./styles.css";
 import DraggableItemsBox from "../draggableItemsBox";
+import "./styles.css";
 
 function AboutModal1() {
   const { t } = useLanguage();
@@ -36,6 +37,17 @@ function About() {
   const { t } = useLanguage();
   const [aboutModal, setAboutModal] = useState(0);
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const getImgList = () => {
+    let img = [];
+    for (let i = 1; i <= 14; i++) {
+      img.push(`IMG_${i}.jpg`);
+    }
+    return img;
+  };
+  const imgOriginal = getImgList();
+
+  const img = Array(3).fill(imgOriginal).flat();
 
   const onOpenModal = (index) => {
     onOpen();
@@ -58,7 +70,6 @@ function About() {
           <Button onClick={() => onOpenModal(2)}>{t("besidesCoding")}</Button>
         </ButtonGroup>
       </HStack>
-
       <Modal
         isOpen={isOpen}
         onClose={onClose}
@@ -83,6 +94,17 @@ function About() {
         </ModalContent>
       </Modal>
       <Divider bgColor={getColorCssVariable("grey")} marginTop={"20px"} />
+      <div className="imgRolling">
+        {img.map((img, index) => (
+          <Image
+            h={"300px"}
+            w={"200px"}
+            src={img}
+            key={index}
+            objectFit="cover"
+          />
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,26 +1,15 @@
-import { HStack, Icon, Image, Text } from "@chakra-ui/react";
+import { HStack, Icon, Text } from "@chakra-ui/react";
 import {
   BsFillEnvelopeAtFill,
   BsGithub,
   BsLinkedin,
   BsTwitter,
 } from "react-icons/bs";
-import "./contact.css";
 import { useLanguage } from "../../context/languageContext";
+import "./contact.css";
 
 function Contact() {
   const { t } = useLanguage();
-
-  const getImgList = () => {
-    let img = [];
-    for (let i = 1; i <= 14; i++) {
-      img.push(`IMG_${i}.jpg`);
-    }
-    return img;
-  };
-  const imgOriginal = getImgList();
-
-  const img = Array(3).fill(imgOriginal).flat();
 
   const contactList = [
     {
@@ -50,17 +39,6 @@ function Contact() {
   ];
   return (
     <div className="contactContainer">
-      <div className="imgRolling">
-        {img.map((img, index) => (
-          <Image
-            h={"300px"}
-            w={"200px"}
-            src={img}
-            key={index}
-            objectFit="cover"
-          />
-        ))}
-      </div>
       <HStack spacing={"40px"}>
         {contactList.map((contact) => (
           <div key={contact.id}>

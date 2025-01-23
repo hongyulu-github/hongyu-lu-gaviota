@@ -16,18 +16,27 @@ function WelcomeBox() {
           <Stack direction="column">
             <Code children={`const ${t("name")} = '${t("hongyulu")}'`} />
             <Code
+              children={`let ${t("title")} = '${t("frontendDeveloper")}'`}
+            />
+            <Code
+              children={`let ${t(
+                "techStack"
+              )} = ["HTML", "CSS", "JavaScript", "TypeScript", "React", "ReactNative", "Vitest"]`}
+            />
+            <Code children={`techStack.push("${t("newSkills")}...")`} />
+            <Code
               colorScheme="red"
               children={` const ${t("greet")} = () => console.log(\`${t(
                 "welcomeToPortfolio"
               )} \${name}\`)`}
             />
             <Code colorScheme="yellow" children={`${t("greet")}()`} />
-            <Code colorScheme="blue" children={`function()`} />
             <Code
               colorScheme="blue"
-              children={` // ${t("scrollToSeeProjects")}  `}
+              children={`function()
+              // ${t("scrollToknowMore")}
+              })();`}
             />
-            <Code colorScheme="blue" children={` })();`} />
           </Stack>
         </Box>
       </div>
@@ -88,8 +97,8 @@ function Main() {
   return (
     <div className="mainSectionContainer">
       <WelcomeBox />
-      <ProjectStack />
       <About />
+      <ProjectStack />
     </div>
   );
 }
