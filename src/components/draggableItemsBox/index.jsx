@@ -3,18 +3,18 @@ import {
   Badge,
   Box,
   HStack,
-  Text,
+  // Text,
   SimpleGrid,
   StackDivider,
   Tag,
 } from "@chakra-ui/react";
 // import { useState } from "react";
-import { useLanguage } from "../../context/languageContext";
+// import { useLanguage } from "../../context/languageContext";
 import { getColorCssVariable } from "../../utils/utils";
 import "./styles.css";
 
 function DraggableItemsBox() {
-  const { t } = useLanguage();
+  // const { t } = useLanguage();
   const hobbies = {
     painting: ["IMG_1.jpg", "IMG_2.jpg", "IMG_3.jpg", "IMG_4.jpg"],
     sifi: ["Doctor Who", "LOTR", "Matrix"],
