@@ -1,4 +1,4 @@
-import { HStack, Icon, Image } from "@chakra-ui/react";
+import { HStack, Icon, Image, Text } from "@chakra-ui/react";
 import {
   BsFillEnvelopeAtFill,
   BsGithub,
@@ -6,19 +6,21 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import "./contact.css";
+import { useLanguage } from "../../context/languageContext";
 
 function Contact() {
-  const imgOriginal = [
-    "IMG_1.jpg",
-    "IMG_2.jpg",
-    "IMG_3.jpg",
-    "IMG_4.jpg",
-    "IMG_5.jpg",
-    "IMG_6.jpg",
-    "IMG_7.jpg",
-    "IMG_8.jpg",
-  ];
-  const img = Array(10).fill(imgOriginal).flat();
+  const { t } = useLanguage();
+
+  const getImgList = () => {
+    let img = [];
+    for (let i = 1; i <= 14; i++) {
+      img.push(`IMG_${i}.jpg`);
+    }
+    return img;
+  };
+  const imgOriginal = getImgList();
+
+  const img = Array(3).fill(imgOriginal).flat();
 
   const contactList = [
     {
@@ -68,6 +70,9 @@ function Contact() {
           </div>
         ))}
       </HStack>
+      <Text color="purple" fontSize={"3xl"} as="b">
+        {t("contactMe")}
+      </Text>
     </div>
   );
 }

@@ -4,7 +4,7 @@ export const DICTIONARY = {
   greet: { es: "saludar", en: "greet" },
   welcomeToPortfolio: {
     es: "Bienvenid@ al porfolio de ",
-    en: "Welcome to the portfolio of ", // Fixed typo "fortfolio"
+    en: "Welcome to the portfolio of ",
   },
   scrollToSeeProjects: {
     es: "Desliza Para Abajo Para Ver Mis Proyectos",
@@ -31,12 +31,12 @@ export const DICTIONARY = {
     en: "Thanks to Angela Yu's Web Development Bootcamp course on Udemy, I created an exciting mini game that has improved my logic and programming skills. I greatly enjoyed building this project, which gave me valuable skills and a deep sense of accomplishment.",
   },
   subtitlePomodoroTimer: {
-    es: "El Pomodoro Timer con React es una aplicación de productividad que utiliza la técnica Pomodoro para mejorar tu enfoque. Con un temporizador intuitivo, una lista de tareas integrada y citas motivadoras, esta herramienta te ayuda a gestionar tu tiempo de manera efectiva. Desarrollada en React, la aplicación ofrece una experiencia de usuario fluida. Actualmente en desarrollo del backend para funcionalidades adicionales y sincronización en la nube.",
-    en: "The Pomodoro Timer with React is a productivity app that uses the Pomodoro technique to enhance focus. With an intuitive timer, an integrated task list, and motivational quotes, this tool helps you manage your time effectively. Developed in React, the app offers a smooth user experience. Currently, the backend is under development for additional features and cloud synchronization.",
+    es: "El Pomodoro Timer con React es una aplicación de productividad que utiliza la técnica Pomodoro para mejorar tu enfoque. Con un temporizador intuitivo, una lista de tareas integrada y citas motivadoras, esta herramienta te ayuda a gestionar tu tiempo de manera efectiva. Desarrollada en React, la aplicación ofrece una experiencia de usuario fluida.",
+    en: "The Pomodoro Timer with React is a productivity app that uses the Pomodoro technique to enhance focus. With an intuitive timer, an integrated task list, and motivational quotes, this tool helps you manage your time effectively. Developed in React, the app offers a smooth user experience.",
   },
   aboutMe: { es: "{Sobre mí}", en: "{About me}" },
-  meAsCoder: { es: "Yo como programadora", en: "Me as a coder" }, // Fixed translation
-  besidesCoding: { es: "Fuera de los códigos", en: "Besides coding" }, // Adjusted translation
+  meAsCoder: { es: "Yo como programadora", en: "Me as a coder" },
+  besidesCoding: { es: "Fuera de los códigos", en: "Besides coding" },
   motivationLetter: {
     es: `Resumiendo, tengo un perfil junior de frontend developer con más de un año de experiencia con TypeScript + React y Unit Testing con Vitest/Jest.
 
@@ -57,4 +57,5 @@ export const DICTIONARY = {
 
     Third, I am a committed worker. In my previous job, we built a great team that worked efficiently thanks to Agile and Scrum methodologies. I also contributed by developing two key product models. With a strong desire to work, I never stay still and always look for ways to grow.`,
   },
+  contactMe: { es: "{{Contacta conmigo}}", en: "{{Contact with me}}" },
 };

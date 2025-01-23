@@ -38,6 +38,12 @@ function ProjectStack() {
   const { t } = useLanguage();
   const projectslist = [
     {
+      title: "Pomodoro Timer",
+      subtitle: t("subtitlePomodoroTimer"),
+      image: "/pomodoro-timer.png",
+      link: "https://pomodoro-timer-hylu.vercel.app/",
+    },
+    {
       title: "Game Hub",
       subtitle: t("subtitleGameHub"),
       image: "/game-hub.png",
@@ -67,18 +73,12 @@ function ProjectStack() {
       image: "/simon-dice.png",
       link: "https://hongyulu-github.github.io/simondice/",
     },
-    {
-      title: "Pomodoro Timer",
-      subtitle: t("subtitlePomodoroTimer"),
-      image: "/pomodoro-timer.png",
-      link: "https://pomodoro-timer-hylu.vercel.app/",
-    },
   ];
 
   return (
     <VStack p={"40px"} spacing={"30px"} className="projectStackContainer">
       {projectslist.map((project, index) => (
-        <Project project={project} index={index} />
+        <Project project={project} index={index} key={index} />
       ))}
     </VStack>
   );

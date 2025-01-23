@@ -5,18 +5,15 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .imgRolling {
   display: flex;
-  overflow: hidden;
   width: 100%;
   margin-bottom: 100px;
-}
-
-.imgRolling img {
-  animation: rollImages 90s linear infinite;
-  margin-right: 10px;
+  animation: rollImages 60s linear infinite;
+  gap: 5px;
 }
 
 @keyframes rollImages {
@@ -24,6 +21,6 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-5000%);
+    transform: translateX(-100%);
   }
 }
