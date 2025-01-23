@@ -3,8 +3,6 @@ body,
 #root {
   height: 100%;
   white-space: pre-line;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 :root {

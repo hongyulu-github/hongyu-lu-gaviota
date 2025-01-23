@@ -40,7 +40,7 @@ function About() {
 
   const getImgList = () => {
     let img = [];
-    for (let i = 1; i <= 14; i++) {
+    for (let i = 1; i <= 28; i++) {
       img.push(`IMG_${i}.jpg`);
     }
     return img;

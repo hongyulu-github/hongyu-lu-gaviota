@@ -1,6 +1,9 @@
 .upperContainer {
-  width: 100vw;
+  width: 95%;
   height: fit-content;
   display: flex;
-  /* position: fixed; */
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 2.5%;
 }
