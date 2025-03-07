@@ -17,7 +17,7 @@ import {
 import { useState } from "react";
 import { useLanguage } from "../../context/languageContext";
 import { getColorCssVariable } from "../../utils/utils";
-import DraggableItemsBox from "../draggableItemsBox";
+import HobbyGrid from "../hobbyGrid";
 import "./styles.css";
 
 function AboutModal1() {
@@ -30,7 +30,7 @@ function AboutModal1() {
 }
 
 function AboutModal2() {
-  return <DraggableItemsBox />;
+  return <HobbyGrid />;
 }
 
 function About() {
