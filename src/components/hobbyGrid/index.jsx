@@ -14,6 +14,7 @@ import "./styles.css";
 import { useEffect, useState } from "react";
 
 function HobbyGrid() {
+  const [shuffledSubcategories, setShuffledSubcategories] = useState([]);
   const { t } = useLanguage();
   const hobbies = {
     painting: ["IMG_1.jpg", "IMG_2.jpg", "IMG_3.jpg"],
@@ -22,13 +23,18 @@ function HobbyGrid() {
   };
 
   const categories = Object.keys(hobbies);
-  const subcategories = shuffleArray([
+  const subcategories = [
     ...hobbies.painting,
     ...hobbies["sifi&Fantasy"],
     ...hobbies.gaming,
-  ]);
+  ];
   const [selectedItems, setSelectedItems] = useState(new Set());
   const [matchedItems, setMatchedItems] = useState(new Set());
+
+  useEffect(() => {
+    const res = shuffleArray(subcategories);
+    setShuffledSubcategories(res);
+  }, []);
 
   const handleClick = (item) => {
     setSelectedItems((prevSelected) => {
@@ -120,7 +126,7 @@ function HobbyGrid() {
         justifyItems="center"
         alignItems="center"
       >
-        {subcategories.map((img, index) => {
+        {shuffledSubcategories.map((img, index) => {
           return (
             <Avatar
               css={
