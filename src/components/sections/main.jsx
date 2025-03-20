@@ -33,7 +33,7 @@ function WelcomeBox() {
             <Code colorScheme="yellow" children={`${t("greet")}()`} />
             <Code
               colorScheme="blue"
-              children={`function()
+              children={`(function () {
               // ${t("scrollToknowMore")}
               })();`}
             />
