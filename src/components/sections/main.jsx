@@ -50,7 +50,7 @@ function ProjectStack() {
       title: "So Possible",
       subtitle: t("subtitleSoPossible"),
       image: "/sopossible.png",
-      link: "https://pomodoro-timer-hylu.vercel.app/",
+      link: "https://so-possible.vercel.app/",
     },
     {
       title: "Pomodoro Timer",
