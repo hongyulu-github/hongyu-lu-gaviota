@@ -47,6 +47,12 @@ function ProjectStack() {
   const { t } = useLanguage();
   const projectslist = [
     {
+      title: "So Possible",
+      subtitle: t("subtitleSoPossible"),
+      image: "/sopossible.png",
+      link: "https://pomodoro-timer-hylu.vercel.app/",
+    },
+    {
       title: "Pomodoro Timer",
       subtitle: t("subtitlePomodoroTimer"),
       image: "/pomodoro-timer.png",

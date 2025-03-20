@@ -8,9 +8,8 @@ import {
   StackDivider,
   Text,
 } from "@chakra-ui/react";
-// import { useLanguage } from "../../context/languageContext";
 import { useLanguage } from "../../context/languageContext";
-import { getColorCssVariable } from "../../utils/utils";
+import { getColorCssVariable, shuffleArray } from "../../utils/utils";
 import "./styles.css";
 import { useEffect, useState } from "react";
 
@@ -23,11 +22,11 @@ function HobbyGrid() {
   };
 
   const categories = Object.keys(hobbies);
-  const subcategories = [
+  const subcategories = shuffleArray([
     ...hobbies.painting,
     ...hobbies["sifi&Fantasy"],
     ...hobbies.gaming,
-  ];
+  ]);
   const [selectedItems, setSelectedItems] = useState(new Set());
   const [matchedItems, setMatchedItems] = useState(new Set());
 
@@ -115,11 +114,15 @@ function HobbyGrid() {
           );
         })}
       </HStack>
-      <SimpleGrid columns={3} spacing={10}>
+      <SimpleGrid
+        columns={3}
+        spacing={10}
+        justifyItems="center"
+        alignItems="center"
+      >
         {subcategories.map((img, index) => {
           return (
             <Avatar
-              w={"100%"}
               css={
                 matchedItems.has(img)
                   ? matcheddRing
