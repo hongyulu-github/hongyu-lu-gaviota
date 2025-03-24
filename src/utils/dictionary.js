@@ -85,10 +85,13 @@ export const DICTIONARY = {
     es: `Como una persona apasionada, honesta, empática y, al mismo tiempo, de mente abierta, tengo varios pasatiempos para disfrutar en mi tiempo libre.
     Soy una pintora ocasional, una fiel re-visionadora de Doctor Who y una jugadora de Zelda que nunca termina el juego.
 
-    Aquí tienes un pequeño cuestionario de emparejamiento de ellos, ¡haz las parejas!`,
+    Aquí tienes un pequeño cuestionario de emparejamiento:
+    Tienes que emparejar cada imagen con su categoría. ¡Venga, vamos!
+    `,
     en: `As a passionate, honest, and empathetic yet open-minded individual, I have quite a few hobbies to enjoy in my free time.
     I am an occasional painter, a devoted Doctor Who re-watcher, and a perpetual never-finish-the-game Zelda player.
 
-    Here’s a small matching quiz for you—pair them up!`,
+    Here’s a small matching quiz:
+    You need to match each image with its category. Come on, let’s go!`,
   },
 };
