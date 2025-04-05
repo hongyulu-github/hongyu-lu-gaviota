@@ -1,10 +1,20 @@
-import { Card, CardBody, Heading, Image, Stack, Text } from "@chakra-ui/react";
+import {
+  Card,
+  CardBody,
+  Heading,
+  Image,
+  Stack,
+  Text,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 import "./styles.css";
 
 function Project({ project, index }) {
   const getProjectCardTop = (index) => {
-    return `calc(20% + 20px*${index})`;
+    return `calc(20px*${index + 1})`;
   };
+
+  const display = useBreakpointValue({ base: false, sm: true });
   return (
     <div
       key={index}
@@ -17,13 +27,13 @@ function Project({ project, index }) {
             src={project.image}
             alt={project.title}
             borderRadius="lg"
-            objectFit="cover"
-            maxW={{ base: "100%", sm: "500px" }}
+            objectFit="contain"
+            maxW={{ base: "100%", sm: "60%" }}
           />
           <CardBody>
             <Stack mt="6" spacing="3">
               <Heading size="md">{project.title}</Heading>
-              <Text>{project.subtitle}</Text>
+              {display && <Text>{project.subtitle}</Text>}
             </Stack>
           </CardBody>
         </Card>

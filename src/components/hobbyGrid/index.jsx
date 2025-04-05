@@ -100,7 +100,7 @@ function HobbyGrid() {
   }, [matchedItems]);
 
   return (
-    <Box h={"80vh"} position="relative">
+    <Box position="relative">
       <Text pb={"10px"}>{t("personality")}</Text>
       <HStack
         className="categoryStack"

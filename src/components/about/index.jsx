@@ -2,7 +2,6 @@ import {
   Button,
   ButtonGroup,
   Divider,
-  HStack,
   Image,
   Modal,
   ModalBody,
@@ -11,7 +10,9 @@ import {
   ModalFooter,
   ModalHeader,
   ModalOverlay,
+  Stack,
   Text,
+  useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import { useState } from "react";
@@ -38,6 +39,8 @@ function About() {
   const [aboutModal, setAboutModal] = useState(0);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const isAttached = useBreakpointValue({ base: true, md: false });
+
   const getImgList = () => {
     let img = [];
     for (let i = 1; i <= 28; i++) {
@@ -59,17 +62,17 @@ function About() {
   return (
     <div className="aboutContainer">
       <Divider bgColor={getColorCssVariable("grey")} marginBottom={"20px"} />
-      <HStack justifyContent={"space-around"}>
+      <Stack justifyContent={"space-around"} direction={["column", "row"]}>
         <Text fontSize={"lg"} as={"b"}>
           {t("aboutMe")}{" "}
         </Text>
-        <ButtonGroup variant="outline" spacing="6">
+        <ButtonGroup variant="outline" spacing="6" isAttached={isAttached}>
           <Button colorScheme={"purple"} onClick={() => onOpenModal(1)}>
             {t("meAsCoder")}
           </Button>
           <Button onClick={() => onOpenModal(2)}>{t("besidesCoding")}</Button>
         </ButtonGroup>
-      </HStack>
+      </Stack>
       <Modal
         isOpen={isOpen}
         onClose={onClose}
