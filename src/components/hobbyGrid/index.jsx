@@ -65,19 +65,16 @@ function HobbyGrid() {
     return isCategoryMatch && isHobbyMatch;
   };
 
-  const selectedRing = defineStyle({
+  const defaultStyle = defineStyle({
+    cursor: "pointer",
     outlineWidth: "2px",
-    outlineColor: "teal",
     outlineOffset: "3px",
     outlineStyle: "solid",
   });
 
-  const matcheddRing = defineStyle({
-    outlineWidth: "2px",
-    outlineColor: "gold",
-    outlineOffset: "3px",
-    outlineStyle: "solid",
-  });
+  const selectedRing = defineStyle({ ...defaultStyle, outlineColor: "teal" });
+
+  const matcheddRing = defineStyle({ ...defaultStyle, outlineColor: "gold" });
 
   const allMatched = () => {
     const audio = new Audio("/yahaha.mp3");
@@ -114,6 +111,7 @@ function HobbyGrid() {
               variant="subtle"
               key={index}
               onClick={() => handleClick(category)}
+              css={{ cursor: "pointer" }}
             >
               {category}
             </Badge>
@@ -134,7 +132,7 @@ function HobbyGrid() {
                   ? matcheddRing
                   : selectedItems.has(img)
                   ? selectedRing
-                  : {}
+                  : defaultStyle
               }
               size={"xl"}
               src={img}
